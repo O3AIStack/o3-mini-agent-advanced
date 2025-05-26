@@ -6,7 +6,7 @@ def load_prompt_template(filename: str) -> str:
     with open(path, "r", encoding="utf-8") as file:
         return file.read()
 
-def count_tokens(text: str, model: str = "gpt-4-turbo") -> int:
+def count_tokens(text: str, model: str = "gpt-3.5-turbo") -> int:
     try:
         enc = tiktoken.encoding_for_model(model)
     except KeyError:
