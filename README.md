@@ -21,3 +21,25 @@ This repository provides a modular, session-aware AI agent template built for th
 
 For deployment patterns, agent logic, and tutorials, visit [O3AIStack.com](https://o3aistack.com).
 
+## 📁 Project Structure
+
+```bash
+o3-mini-agent-advanced/
+├── src/
+│   ├── main.py              # FastAPI API entry point
+│   ├── memory.py            # Session memory layer
+│   ├── logic/
+│   │   ├── summarize.py     # Step 1: Summarization agent
+│   │   └── evaluator.py     # Step 2: Evaluation agent
+│   └── utils.py             # Token tools and prompt loader
+├── prompts/
+│   ├── summarizer.txt
+│   └── evaluator.txt
+├── .github/workflows/
+│   └── deploy.yml           # GitHub CI/CD for Azure
+├── requirements.txt
+├── Dockerfile
+└── README.md
+
+
+
